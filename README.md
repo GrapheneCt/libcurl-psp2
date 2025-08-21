@@ -19,8 +19,10 @@ libcurl is built with the following config (only values relevant to usage shown)
 
 Load module as usual. Before using any other functions, set memory allocators with:
 
-```typedef void*(*curl_allocate)(unsigned int);
+```
+typedef void*(*curl_allocate)(unsigned int);
 typedef void(*curl_free)(void *);
 typedef void*(*curl_reallocate)(void *, unsigned int);
 
 int curl_global_memmanager_set_np(curl_allocate, curl_free, curl_reallocate);
+```
